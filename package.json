@@ -1,0 +1,17 @@
+{
+	"name": "lb-slide-in",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/slideInView.js",
+	"scripts": {
+		"start": "parcel index.html",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"lb-lazy-images": "^1.0.28",
+		"lb-scroll-nav": "^1.0.8"
+	}
+}
