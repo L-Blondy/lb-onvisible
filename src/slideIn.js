@@ -1,6 +1,6 @@
 import "./slideIn.css";
 
-export default function slideInView ( nodeList, { from = "bottom", duration = "700ms", delay = 0, reverse = false } = {} ) {
+export default function slideInView ( nodeList, { from = "bottom", duration = 700, delay = 0, reverse = false } = {} ) {
 
 	if ( !nodeList.length )
 		nodeList = [ nodeList ]
@@ -19,7 +19,7 @@ export default function slideInView ( nodeList, { from = "bottom", duration = "7
 
 	[].forEach.call( nodeList, elem => {
 		slideObs.observe( elem );
-		elem.style.animationDuration = duration;
+		elem.style.animationDuration = duration + "ms";
 
 		switch ( from ) {
 			case "bottom":
