@@ -1,0 +1,30 @@
+[class*="pre-slide-in"] {
+     opacity: 0;
+}
+
+.pre-slide-in-bottom {
+     transform: translateY(60px);
+}
+
+.pre-slide-in-top {
+     transform: translateY(-20px);
+}
+
+.pre-slide-in-left {
+     transform: translateX(-80px);
+}
+
+.pre-slide-in-right {
+     transform: translateX(80px);
+}
+
+.slide-in {
+     animation: slidein forwards;
+}
+
+@keyframes slidein {
+     to {
+          transform: translateY(0);
+          opacity: 1;
+     }
+}

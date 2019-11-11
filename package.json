@@ -1,17 +1,24 @@
 {
-	"name": "lb-slide-in",
+	"name": "lb-slidein",
 	"version": "1.0.0",
 	"description": "",
 	"main": "src/slideInView.js",
 	"scripts": {
 		"start": "parcel index.html",
+		"buildcss": "parcel build deploy/slideIn.css",
+		"build": "npx babel deploy/slideIn.js --out-file dist/bundle.js && uglifyjs dist/bundle.js --output dist/bundle.js && npm run buildcss",
+		"deploy": "npm run build && npm publish",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"lb-lazy-images": "^1.0.28",
+		"@babel/cli": "^7.7.0",
+		"@babel/core": "^7.7.2",
+		"@babel/preset-env": "^7.7.1",
+		"cssnano": "^4.1.10",
+		"lb-lazy-images": "^1.1.0",
 		"lb-scroll-nav": "^1.0.8"
 	}
 }
