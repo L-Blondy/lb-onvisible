@@ -14,16 +14,7 @@ const images = document.querySelector( ".images" );
 const images_options = {
 	from: "left",
 }
-slideInView( images, images_options );
-
-const images3 = document.querySelector( ".images" ).children;
-const images3_options = {
-	from: "bottom",
-	delay: 200,
-	duration: "1000ms",
-	reverse: false
-}
-slideInView( images3, images3_options );
+slideInView( images );
 
 const navlinks = document.querySelectorAll( ".navlink" );
 const navlinks_options = {
@@ -32,5 +23,5 @@ const navlinks_options = {
 	duration: "1000ms",
 	reverse: true
 }
-slideInView( navlinks, navlinks_options );
+slideInView( navlinks );
 

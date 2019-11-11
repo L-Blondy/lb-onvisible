@@ -1,8 +1,8 @@
 {
 	"name": "lb-slidein",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "",
-	"main": "src/slideInView.js",
+	"main": "dist/bundle.js",
 	"scripts": {
 		"start": "parcel index.html",
 		"buildcss": "parcel build deploy/slideIn.css",
@@ -20,5 +20,9 @@
 		"cssnano": "^4.1.10",
 		"lb-lazy-images": "^1.1.0",
 		"lb-scroll-nav": "^1.0.8"
-	}
+	},
+	"files": [
+		"dist/*",
+		"deploy/*"
+	]
 }

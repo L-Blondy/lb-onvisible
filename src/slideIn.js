@@ -1,6 +1,6 @@
 import "./slideIn.css";
 
-export default function slideInView ( nodeList, { from = "bottom", duration = "700ms", delay = 0, reverse = false } ) {
+export default function slideInView ( nodeList, { from = "bottom", duration = "700ms", delay = 0, reverse = false } = {} ) {
 
 	if ( !nodeList.length )
 		nodeList = [ nodeList ]
