@@ -20,8 +20,8 @@ const navlinks = document.querySelectorAll( ".navlink" );
 const navlinks_options = {
 	from: "top",
 	delay: 100,
-	duration: "1000ms",
+	duration: 1000,
 	reverse: true
 }
-slideInView( navlinks );
+slideInView( navlinks, navlinks_options );
 

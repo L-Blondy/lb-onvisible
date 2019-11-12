@@ -19,7 +19,7 @@ slideInView( elems, options );
 
 ## Options
 
-- from : `bottom` / top / left/ right
-- duration : `"700ms"`, has to be a string
-- delay : `"0ms"`, has to be a string
-- reverse: `false` / true => reverse the order when delay is applied
+- **from** : `"bottom"` / "top" / "left" / "right", *string*
+- **duration** : `700`, *number*
+- **delay** : `0`, *number*
+- **reverse** : `false` / true, *boolean* => reverse the order when delay is applied
