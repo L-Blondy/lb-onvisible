@@ -1,25 +1,34 @@
-# lb-slidein
+# lb-on-visible
 
-Slide images on screen
+Helps you toggle animations when elements are visible. Works by adding classNames.<br/>
+Great for animation libraries like **Animate.css**
+
 
 ## Usage
 
 ```
-import slideInView from "lb-slidein"
+import onVisible from "lb-slidein"
 
 ...
-
-const elems = document.querySelectorAll( ".elem" );
 const options = {
-	from: "left",
+	class: "left",
 }
-
-slideInView( elems, options );
+onVisible( nodeList || element || string, options );
 ```
+
+**NOTE**<br/>
+Elements all have `.offScreen { opacity: 0; }` before the class is applied.<br/>
+Feel free to override.
 
 ## Options
 
-- **from** : `"bottom"` / "top" / "left" / "right", *string*
-- **duration** : `700`, *number*
-- **delay** : `0`, *number*
-- **reverse** : `false` / true, *boolean* => reverse the order when delay is applied
+- **class** : `no default` class to add when the element is on screen
+- **duration** : `700` = *number*, sets "animation-duration" for the element 
+- **reverse** : `false` / true = *boolean* => reverse the order when delay is applied
+- **delay** : `0` = *number*, delay defore applying the class. 
+
+## Native classes
+- fadeFromTop
+- fadeFromBottom
+- fadeFromLeft
+- fadeFromRight

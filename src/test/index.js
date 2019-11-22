@@ -1,6 +1,6 @@
 import "lb-lazy-images";
 import setScrollNav from "lb-scroll-nav";
-import slideInView from "./slideIn";
+import onVisible from "../slideIn";
 import "./styles.css";
 
 /************** NAVBAR ***************/
@@ -10,18 +10,17 @@ setScrollNav( sections, sectionsContainer )
 
 /************ SLIDE IN VIEW ************/
 
-const images = document.querySelector( ".images" );
 const images_options = {
-	from: "left",
-}
-slideInView( images );
-
-const navlinks = document.querySelectorAll( ".navlink" );
-const navlinks_options = {
-	from: "top",
-	delay: 100,
+	class: "fadeFromRight",
 	duration: 1000,
-	reverse: true
 }
-slideInView( navlinks, navlinks_options );
+onVisible( ".images img", images_options );
+
+const navlinks_options = {
+	class: "fadeFromRight",
+	delay: 100,
+	reverse: false,
+	duration: 2000,
+}
+onVisible( ".navlink", navlinks_options );
 
