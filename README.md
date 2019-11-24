@@ -1,4 +1,4 @@
-# lb-on-visible
+# lb-onvisible
 
 Helps you toggle animations when elements are visible. Works by adding classNames.<br/>
 Great for animation libraries like **Animate.css**
@@ -6,14 +6,26 @@ Great for animation libraries like **Animate.css**
 
 ## Usage
 
+**1. Javascript trigger**
+
 ```
 import onVisible from "lb-slidein"
-
-...
+```
+```
 const options = {
-	class: "left",
+	class: "oneClass anotherClass ...",
+	duration: 700,
+	reverse: false,
+	delay: 0
 }
 onVisible( nodeList || element || string, options );
+```
+**2. HTML trigger**
+```
+import  "lb-slidein"
+```
+```
+<section class="section-1" id="one" data-onVisible="fadeFromLeft">
 ```
 
 **NOTE**<br/>

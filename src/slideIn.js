@@ -1,5 +1,11 @@
 import "./slideIn.css";
 
+const targets = document.querySelectorAll( "[data-onVisible]" );
+targets.forEach( target => {
+	console.log( target.dataset.onvisible )
+	onVisible( target, { class: target.dataset.onvisible } )
+} )
+
 export default function onVisible ( nodeList, { class: addClass, duration, delay = 0, reverse = false } = {} ) {
 
 	try {
