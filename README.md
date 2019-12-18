@@ -9,7 +9,7 @@ Great for animation libraries like **Animate.css**
 **1. Javascript trigger**
 
 ```
-import onVisible from "lb-slidein"
+import onVisible from "lb-onvisible"
 ```
 ```
 const options = {
@@ -22,7 +22,7 @@ onVisible( nodeList || element || string, options );
 ```
 **2. HTML trigger**
 ```
-import  "lb-slidein"
+import  "lb-onvisible"
 ```
 ```
 <section class="section-1" id="one" data-onVisible="fadeFromLeft">
