@@ -9,7 +9,7 @@ Great for animation libraries like **Animate.css**
 **1. Javascript trigger**
 
 ```
-import onVisible from "lb-onvisible"
+import { onVisible } from "lb-onvisible"
 ```
 ```
 const options = {
