@@ -1,7 +1,7 @@
 import "./slideIn.css";
 
 const targets = document.querySelectorAll( "[data-onVisible]" );
-targets.forEach( target => {
+[].forEach.call( targets, target => {
 	onVisible( target, { class: target.dataset.onvisible } )
 } )
 
@@ -37,6 +37,14 @@ export function onVisible ( nodeList, { class: addClass, duration, delay = 0, re
 		} )
 	}
 	catch ( error ) {
+		if ( typeof nodeList === "string" )
+			nodeList = document.querySelectorAll( nodeList )
+		if ( !nodeList.length ) {
+			nodeList = [ nodeList ]
+		}
+		nodeList.forEach( node => {
+			node.classList.add( node.dataset.onvisible )
+		} )
 		console.log( "No slide in animation, this browser might not support the IntersectionObsever API" )
 	}
 }
