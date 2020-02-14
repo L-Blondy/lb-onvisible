@@ -27,7 +27,7 @@ export function onVisible ( nodeList, { class: addClass, duration, delay = 0, re
 			} )
 		}
 
-		const slideObs = new IntersectionObserver( slideCb, {} );
+		const slideObs = new IntersectionObserver( slideCb, { threshold: 0.001 } );
 
 		[].forEach.call( nodeList, elem => {
 			if ( duration )
@@ -42,7 +42,7 @@ export function onVisible ( nodeList, { class: addClass, duration, delay = 0, re
 		if ( !nodeList.length ) {
 			nodeList = [ nodeList ]
 		}
-		nodeList.forEach( node => {
+		[].forEach.call( nodeList, node => {
 			node.classList.add( node.dataset.onvisible )
 		} )
 		console.log( "No slide in animation, this browser might not support the IntersectionObsever API" )
