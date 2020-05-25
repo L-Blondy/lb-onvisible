@@ -1,7 +1,7 @@
 {
 	"name": "lb-onvisible",
-	"version": "1.0.10",
-	"description": "",
+	"version": "1.0.11",
+	"description": "Adds classNames to the elements when they are visible.",
 	"main": "dist/bundle.js",
 	"scripts": {
 		"start": "parcel index.html",
@@ -9,7 +9,13 @@
 		"deploy": "npm run build && npm publish",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"keywords": [],
+	"keywords": [
+		"onvisible",
+		"on visible",
+		"animate",
+		"animation",
+		"trigger animation"
+	],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
