@@ -1,7 +1,8 @@
 # lb-onvisible
 
-Helps you toggle animations when elements are visible. Works by adding classNames.<br/>
-Great for animation libraries like **Animate.css**
+Adds classNames to the elements when they are visible.  
+If the `IntersectionObserver` API is not supported, the classeNames will be added on page load.  
+Great for animation libraries like **Animate.css**.  
 
 
 ## Usage
@@ -16,7 +17,8 @@ const options = {
 	class: "oneClass anotherClass ...",
 	duration: 700,
 	reverse: false,
-	delay: 0
+	delay: 0, 
+	root: viewport
 }
 onVisible( nodeList || element || string, options );
 ```
@@ -25,7 +27,8 @@ onVisible( nodeList || element || string, options );
 import  "lb-onvisible"
 ```
 ```
-<section class="section-1" id="one" data-onVisible="fadeFromLeft">
+<div data-onVisible="fadeFromLeft">
+	I will fade in from the left when
 ```
 
 **NOTE**<br/>
@@ -38,8 +41,9 @@ Feel free to override.
 - **duration** : `700` = *number*, sets "animation-duration" for the element 
 - **reverse** : `false` / true = *boolean* => reverse the order when delay is applied
 - **delay** : `0` = *number*, delay defore applying the class. 
+- **root** : `viewport` = *DOM element*, the Intersection observer root. 
 
-## Native classes
+## Built-in classes
 - fadeFromTop
 - fadeFromBottom
 - fadeFromLeft
