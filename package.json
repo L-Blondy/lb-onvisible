@@ -1,6 +1,6 @@
 {
 	"name": "lb-onvisible",
-	"version": "1.0.11",
+	"version": "1.0.12",
 	"description": "Adds classNames to the elements when they are visible.",
 	"main": "dist/bundle.js",
 	"scripts": {

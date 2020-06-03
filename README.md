@@ -28,7 +28,8 @@ import  "lb-onvisible"
 ```
 ```
 <div data-onVisible="fadeFromLeft">
-	I will fade in from the left when
+	will fade in from the left when intersecting with the root element
+</div>
 ```
 
 **NOTE**<br/>
