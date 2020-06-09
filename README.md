@@ -20,7 +20,9 @@ const options = {
 	delay: 0, 
 	root: viewport
 }
-onVisible( nodeList || element || string, options );
+onVisible( '.selector', options );
+
+//also accept Node and NodeList instead of a string selector
 ```
 **2. HTML trigger**
 ```
@@ -38,9 +40,9 @@ Feel free to override.
 
 ## Options
 
-- **class** : ``no default`` class to add when the element is on screen
-- **duration** : `700` = *number*, sets "animation-duration" for the element 
-- **reverse** : `false` / true = *boolean* => reverse the order when delay is applied
+- **class** : `no default` class to add when the element is on screen
+- **duration** : `700`: *number*, sets "animation-duration" for the element 
+- **reverse** : `false` / true: *boolean* => reverse the order when delay is applied
 - **delay** : `0` = *number*, delay to set className between each element. 
 - **root** : `viewport` = *DOM element*, the IntersectionObserver root. 
 

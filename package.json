@@ -26,6 +26,11 @@
 		"lb-lazy-images": "^1.1.0",
 		"lb-scroll-nav": "^1.1.4"
 	},
+	"homepage": "https://github.com/L-Blondy/lb-onvisible",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/L-Blondy/lb-onvisible.git"
+	},
 	"files": [
 		"dist/*",
 		"deploy/*"
