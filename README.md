@@ -34,8 +34,8 @@ import  "lb-onvisible"
 </div>
 ```
 
-**NOTE**<br/>
-Elements all have `.offScreen { opacity: 0; }` before the class is applied.<br/>
+**NOTE** :  
+Elements all have `.offScreen { opacity: 0; }` before the class is applied.  
 Feel free to override.
 
 ## Options
