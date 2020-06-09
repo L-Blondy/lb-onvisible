@@ -16,13 +16,13 @@ import { onVisible } from "lb-onvisible"
 const options = {
 	class: "oneClass anotherClass ...",
 	duration: 700,
-	reverse: false,
 	delay: 0, 
+	reverse: false,
 	root: viewport
 }
 onVisible( '.selector', options );
 
-//also accept Node and NodeList instead of a string selector
+//also accepts Node and NodeList instead of a Selector
 ```
 **2. HTML trigger**
 ```
@@ -40,11 +40,11 @@ Feel free to override.
 
 ## Options
 
-- **class** : `no default` class to add when the element is on screen
-- **duration** : `700`: *number*, sets "animation-duration" for the element 
-- **reverse** : `false` / true: *boolean* => reverse the order when delay is applied
-- **delay** : `0` = *number*, delay to set className between each element. 
-- **root** : `viewport` = *DOM element*, the IntersectionObserver root. 
+- **class** : `no default` : *string* => class to add when the element is on screen
+- **duration** : `700` : *number* => sets "animation-duration" for the element 
+- **delay** : `0` : *number* => delay to set className between each element. 
+- **reverse** : `false` : *boolean* => reverse the order when delay is applied
+- **root** : `viewport` : *DOM element* => the IntersectionObserver root. 
 
 ## Built-in classes
 - fadeFromTop
