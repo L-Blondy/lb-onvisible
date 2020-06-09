@@ -38,11 +38,11 @@ Feel free to override.
 
 ## Options
 
-- **class** : `no default` class to add when the element is on screen
+- **class** : ``no default`` class to add when the element is on screen
 - **duration** : `700` = *number*, sets "animation-duration" for the element 
 - **reverse** : `false` / true = *boolean* => reverse the order when delay is applied
-- **delay** : `0` = *number*, delay defore applying the class. 
-- **root** : `viewport` = *DOM element*, the Intersection observer root. 
+- **delay** : `0` = *number*, delay to set className between each element. 
+- **root** : `viewport` = *DOM element*, the IntersectionObserver root. 
 
 ## Built-in classes
 - fadeFromTop
